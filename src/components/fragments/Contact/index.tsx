@@ -93,7 +93,7 @@ export default function Contact() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Name</FormLabel>
+                      <FormLabel className="uppercase">Name</FormLabel>
                       <FormControl>
                         <Input placeholder="Your name" {...field} />
                       </FormControl>
@@ -106,7 +106,7 @@ export default function Contact() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email</FormLabel>
+                      <FormLabel className="uppercase">Email</FormLabel>
                       <FormControl>
                         <Input
                           type="email"
@@ -123,7 +123,7 @@ export default function Contact() {
                   name="subject"
                   render={({ field }) => (
                     <FormItem className="col-span-2">
-                      <FormLabel>Subject</FormLabel>
+                      <FormLabel className="uppercase">Subject</FormLabel>
                       <FormControl>
                         <Input
                           placeholder="Subject of the Message"
@@ -139,7 +139,7 @@ export default function Contact() {
                   name="message"
                   render={({ field }) => (
                     <FormItem className="col-span-2">
-                      <FormLabel>Message</FormLabel>
+                      <FormLabel className="uppercase">Message</FormLabel>
                       <FormControl>
                         <Textarea
                           className="min-h-[140px]"

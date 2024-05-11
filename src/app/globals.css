@@ -76,7 +76,8 @@
     a,
     span,
     li,
-    figcaption {
+    figcaption,
+    label {
       @apply font-mono text-[#a1a1a1];
     }
 
@@ -89,7 +90,9 @@
     h3,
     h4,
     h5,
-    h6 {
+    h6,
+    input,
+    textarea {
       @apply font-sans;
     }
 
