@@ -43,7 +43,7 @@ export default function Projects() {
                     <Image
                       src={project.thumbnail}
                       fill
-                      alt={"image of sublimetext"}
+                      alt={project.title}
                       className="mx-auto h-full w-full object-cover object-top opacity-25 transition-all duration-700 ease-in-out group-hover:scale-105"
                       sizes="(min-width: 1540px) 535px, (min-width: 1040px) calc(50vw - 105px), (min-width: 780px) calc(100vw - 193px), calc(100vw - 49px)"
                     />

@@ -66,18 +66,18 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   } */
-}
 
-@layer base {
   * {
     @apply scroll-smooth border-border;
   }
+
   body {
     p,
     a,
     span,
     li,
-    figcaption {
+    figcaption,
+    label {
       @apply font-mono text-[#a1a1a1];
     }
 
@@ -90,59 +90,14 @@
     h3,
     h4,
     h5,
-    h6 {
+    h6,
+    input,
+    textarea {
       @apply font-sans;
     }
 
     @apply bg-background text-foreground;
   }
-
-  /* .divisor {
-    position: relative;
-    height: 1px;
-    width: 100%;
-    background: repeating-linear-gradient(
-      90deg,
-      var(--ds-gray-500),
-      var(--ds-gray-500) 4px,
-      transparent 4px,
-      transparent 10px
-    );
-  }
-
-  .divisor::before {
-    left: 0;
-    background: linear-gradient(
-      90deg,
-      var(--ds-background-200) 0,
-      transparent 100%
-    );
-  }
-
-  .divisor::after {
-    right: 0;
-    background: linear-gradient(
-      90deg,
-      transparent 0,
-      var(--ds-background-200) 100%
-    );
-  }
-
-  .divisor::after,
-  .divisor::before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: var(--guide-offset);
-  }
-
-  .divisor::before,
-  .divisor::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: var(--guide-offset);
-  } */
 }
 
 @layer utilities {
