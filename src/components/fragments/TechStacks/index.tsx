@@ -1,6 +1,6 @@
+import Dots from "@/components/ui/dots";
 import Image from "next/image";
 import Section from "@/components/layouts/Section";
-import Dots from "@/components/ui/dots";
 import { techStacks } from "@/constants/menu";
 
 export default function TechStacks() {
