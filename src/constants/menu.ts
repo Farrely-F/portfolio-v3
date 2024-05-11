@@ -32,17 +32,17 @@ export const childNavMenus = [
 export const socmedMenus = [
   {
     label: "GITHUB",
-    href: "https://github.com/farreldev",
+    href: "https://github.com/Farrely-F",
     icon: icons.Github,
   },
   {
     label: "LINKEDIN",
-    href: "https://www.linkedin.com/in/farreldev/",
+    href: "https://www.linkedin.com/in/farrelyf/",
     icon: icons.Linkedin,
   },
   {
     label: "MEDIUM",
-    href: "https://twitter.com/farreldev",
+    href: "https://medium.com/@farrely.firenza",
     icon: icons.Book,
   },
 ];

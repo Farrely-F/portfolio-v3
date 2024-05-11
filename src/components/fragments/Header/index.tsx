@@ -79,7 +79,7 @@ export default function Header() {
               document.body.classList.remove("overflow-hidden");
             }}
           >
-            FAR.DEV
+            FAR.CLOUD
           </Link>
           <div className="hidden gap-4 md:flex">
             {childNavMenus.map((menu) => (

@@ -1,4 +1,5 @@
 import AboutSection from "@/components/fragments/About";
+import Contact from "@/components/fragments/Contact";
 import Experience from "@/components/fragments/Experience";
 import HeroSection from "@/components/fragments/Hero";
 import MainLayout from "@/components/layouts/MainLayout";
@@ -14,6 +15,7 @@ export default function HomePage() {
         <TechStacks />
         <Projects />
         <Experience />
+        <Contact />
       </MainLayout>
     </>
   );

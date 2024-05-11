@@ -130,7 +130,7 @@ export default function Experience() {
                               src={cert.url}
                               alt={cert.title}
                               fill
-                              className="h-full w-full"
+                              className="h-full w-full object-cover"
                             />
                             <div className="absolute right-2 top-2 hidden max-w-md flex-wrap gap-2 md:flex">
                               {cert.skills.map((skill, index) => (

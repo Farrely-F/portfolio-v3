@@ -21,6 +21,13 @@ const certificates: certificate[] = [
     skills: ["Javascript", "MERN Stack", "Full Stack Web Development"],
     date: "24-02-2023",
   },
+  {
+    title: "ReactJs Web FrontEnd",
+    issuer: "PKS Digital School",
+    url: "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/Certificates/Screenshot%202024-05-11%20131423.png?updatedAt=1715408180071",
+    skills: ["Javascript", "ReactJs", "Front End Web Development"],
+    date: "02-05-2023",
+  },
 ];
 
 export default certificates;
