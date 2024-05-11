@@ -32,17 +32,17 @@ export const childNavMenus = [
 export const socmedMenus = [
   {
     label: "GITHUB",
-    href: "https://github.com/farreldev",
+    href: "https://github.com/Farrely-F",
     icon: icons.Github,
   },
   {
     label: "LINKEDIN",
-    href: "https://www.linkedin.com/in/farreldev/",
+    href: "https://www.linkedin.com/in/farrelyf/",
     icon: icons.Linkedin,
   },
   {
     label: "MEDIUM",
-    href: "https://twitter.com/farreldev",
+    href: "https://medium.com/@farrely.firenza",
     icon: icons.Book,
   },
 ];
@@ -179,7 +179,7 @@ export const projects = [
     title: "Hacktiv Go Final Assignment",
     description: "Portfolio V1",
     thumbnail:
-      "https://ik.imagekit.io/xdxrivbja/BinaryBG.jpg?updatedAt=1714059560755",
+      "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/BinaryBG.jpg?updatedAt=1715003319550",
     href: {
       github: "https://github.com/Farrely-F/hacktivgo-final-assignment",
       preview: null,
@@ -190,7 +190,7 @@ export const projects = [
     title: "Runnerz",
     description: "React Redux Fake Store",
     thumbnail:
-      "https://ik.imagekit.io/xdxrivbja/Runnerz.png?updatedAt=1714053377584",
+      "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/Runnerz.png?updatedAt=1715003505780",
     href: {
       github: "https://github.com/sltr9/portfolio-v2",
       preview: "https://runnerz.vercel.app/",
@@ -201,7 +201,7 @@ export const projects = [
     title: "Farrel.Dev",
     description: "Portfolio V3",
     thumbnail:
-      "https://ik.imagekit.io/xdxrivbja/PortfolioV3.png?updatedAt=1714056349646",
+      "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/PortfolioV3.png?updatedAt=1715003332398",
     href: {
       github: "https://github.com/sltr9/portfolio-v3",
       preview: "https://github.com/sltr9/portfolio-v3",
@@ -212,7 +212,7 @@ export const projects = [
     title: "Gamefinity Website Revamp",
     description: "Gaming media, entertainment, and community platform",
     thumbnail:
-      "https://ik.imagekit.io/xdxrivbja/Gamefinity.png?updatedAt=1714054281014",
+      "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/Gamefinity.png?updatedAt=1715003348897",
     href: {
       github: null,
       preview: "https://gamefinity.id",
@@ -223,7 +223,7 @@ export const projects = [
     title: "Paoplay Website Revamp",
     description: "Paoplay Website Revamp",
     thumbnail:
-      "https://ik.imagekit.io/xdxrivbja/Paoplay.png?updatedAt=1714055644095",
+      "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/Paoplay.png?updatedAt=1715003338875",
     href: {
       github: null,
       preview: "https://paoplay.com",
@@ -234,7 +234,7 @@ export const projects = [
     title: "Instn Revamp",
     description: "Instn Revamp",
     thumbnail:
-      "https://ik.imagekit.io/xdxrivbja/instn.png?updatedAt=1714054708280",
+      "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/instn.png?updatedAt=1715003343550",
     href: {
       github: null,
       preview: "https://gamefinity.instn.id",
@@ -245,7 +245,7 @@ export const projects = [
     title: "Tokopedia Play Clone",
     description: "Tokopedia Play Clone",
     thumbnail:
-      "https://ik.imagekit.io/xdxrivbja/TokpedPlayClone.png?updatedAt=1714057004753",
+      "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/TokpedPlayClone.png?updatedAt=1715003325304",
     href: {
       github: null,
       preview: "https://play.tokopedia.com",
@@ -256,7 +256,7 @@ export const projects = [
     title: "GCA Comprof Website",
     description: "GCA Comprof Website",
     thumbnail:
-      "https://ik.imagekit.io/xdxrivbja/GCA.png?updatedAt=1714055489823",
+      "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/GCA.png?updatedAt=1715003499376",
     href: {
       github: null,
       preview: "https://griyaciptaabadi.netlify.app/",

@@ -18,6 +18,17 @@ export const metadata: Metadata = {
     other: { rel: "apple-touch-icon", url: "/favicon.png" },
   },
   authors: [{ name: "FAR.DEV", url: "https://far.dev" }],
+  openGraph: {
+    images: [
+      {
+        url: "https://site.farrel.cloud/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "FARREL.DEV",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
