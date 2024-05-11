@@ -1,10 +1,27 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Dots from "@/components/ui/dots";
 import Image from "next/image";
+import Link from "next/link";
 import Section from "@/components/layouts/Section";
 import { socmedMenus } from "@/constants/menu";
 
 export default function HeroSection() {
+  const handleMenuClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+
+    const href = event.currentTarget.href;
+    const hashIndex = href.indexOf("#");
+
+    if (hashIndex !== -1) {
+      const id = href.slice(hashIndex + 1);
+      const element = document.getElementById(id);
+
+      element && element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <Section className="relative">
@@ -13,6 +30,7 @@ export default function HeroSection() {
             src={
               "https://repository-images.githubusercontent.com/287075113/503c4480-0cab-11eb-94dc-b3bf98b1ad1b"
             }
+            priority
             alt="profile image"
             width={512}
             height={512}
@@ -49,9 +67,16 @@ export default function HeroSection() {
                 </a>
               ))}
             </div>
-            <Button className="text-xs transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-[0_0_12px_12px_hsl(0,0%,100%,0.08)] active:scale-95 active:bg-gray-100">
-              GET TO KNOW
-            </Button>
+            <Link
+              className="inline-flex"
+              href="/#contact"
+              onClick={handleMenuClick}
+              shallow
+            >
+              <Button className="text-xs transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-[0_0_12px_12px_hsl(0,0%,100%,0.08)] active:scale-95 active:bg-gray-100">
+                GET TO KNOW
+              </Button>
+            </Link>
           </div>
           <div className="col-[1/11] h-full w-full md:col-[6/11]">
             <pre className="hide-scrollbar w-full overflow-x-scroll rounded-md border border-white/10 bg-black/10 p-4 backdrop-blur-sm">

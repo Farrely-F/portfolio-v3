@@ -42,7 +42,7 @@ export default function AboutSection() {
             <p className="font-sans">
               just like the wise man who said that. Mastering front end web
               development path is not an easy task. it require patience and
-              dedication. Here is where my major special ability kicks in.
+              dedication. Here is where my philosophical thinking used.
               Philosophy has taught me so many things especially about
               discipline and self-motivation. Being adaptive and dynamic despite
               an unpredictable situation {"'"}just like JavaScript framework
@@ -60,6 +60,9 @@ export default function AboutSection() {
                 </span>
               </span>
               , but I could feel that computer related thing is part of my life.
+              And to keep up with the latest technologies available, I am taking
+              various courses and projects to challenge myself and learn new
+              things.
             </p>
           </div>
         </div>
