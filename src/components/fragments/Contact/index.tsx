@@ -12,13 +12,17 @@ import {
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { LoaderIcon } from "lucide-react";
 import Section from "@/components/layouts/Section";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/components/ui/use-toast";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 export default function Contact() {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
   const form = useForm<ContactForm>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -29,9 +33,21 @@ export default function Contact() {
     },
   });
 
-  const formSubmit = (data: ContactForm) => {
+  const formSubmit = async (data: ContactForm) => {
     try {
-      // throw new Error("Function not implemented.");
+      setIsLoading(true);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error(response.statusText);
+      }
+
       toast({
         title: "Message Sent",
         description:
@@ -45,6 +61,8 @@ export default function Contact() {
           description: error.message,
         });
       }
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -133,7 +151,13 @@ export default function Contact() {
                     </FormItem>
                   )}
                 />
-                <Button className="col-span-2 max-w-fit text-xs transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-[0_0_12px_12px_hsl(0,0%,100%,0.08)] active:scale-95 active:bg-gray-100">
+                <Button
+                  disabled={isLoading}
+                  className="col-span-2 max-w-fit text-xs transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-[0_0_12px_12px_hsl(0,0%,100%,0.08)] active:scale-95 active:bg-gray-100"
+                >
+                  {isLoading && (
+                    <LoaderIcon className="mr-2 h-4 w-4 animate-spin" />
+                  )}
                   SUBMIT
                 </Button>
               </form>
