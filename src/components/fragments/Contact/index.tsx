@@ -70,7 +70,7 @@ export default function Contact() {
     <>
       <Section
         id="contact"
-        className="relative overflow-clip bg-gradient-to-b from-white/5 via-black to-white/0 py-12"
+        className="relative scroll-m-16 overflow-clip bg-gradient-to-b from-white/5 via-black to-white/0 py-12"
       >
         <div className="absolute -top-2/3 left-1/2 z-[-1] h-[800px] w-[75%] -translate-x-1/2 rounded-full bg-white/5 blur-xl"></div>
         <div className="grid w-full grid-cols-10 gap-y-8 md:min-h-[60dvh]">

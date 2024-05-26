@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { childNavMenus } from "@/constants/menu";
 import { cn } from "@/lib/utils";
+import { removeHash } from "@/utils/removeHash";
 
 export default function Header() {
   const [isNavActive, setIsNavActive] = useState<boolean>(false);
@@ -19,23 +20,6 @@ export default function Header() {
       document.body.classList.remove("overflow-hidden");
     } else {
       document.body.classList.add("overflow-hidden");
-    }
-  };
-
-  const handleMenuClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    event.preventDefault();
-
-    const href = event.currentTarget.href;
-    const hashIndex = href.indexOf("#");
-
-    isChildMenuOpen && setIsChildMenuOpen(!isChildMenuOpen),
-      document.body.classList.remove("overflow-hidden");
-
-    if (hashIndex !== -1) {
-      const id = href.slice(hashIndex + 1);
-      const element = document.getElementById(id);
-
-      element && element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -87,7 +71,7 @@ export default function Header() {
                 className="transition-all duration-500 hover:text-white"
                 key={menu.label}
                 href={menu.href}
-                onClick={handleMenuClick}
+                onClick={removeHash}
               >
                 {menu.label}
               </a>
@@ -108,7 +92,7 @@ export default function Header() {
                 <a
                   className="block w-full hover:text-white"
                   href={menu.href}
-                  onClick={handleMenuClick}
+                  onClick={removeHash}
                 >
                   {menu.label}
                 </a>

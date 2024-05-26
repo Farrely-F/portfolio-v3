@@ -1,5 +1,17 @@
 import { icons } from "lucide-react";
 
+export const profileJson = `{
+  "name": "Farrel",
+  "role": "Front End Engineer",
+  "age": 23,
+  "country": "Indonesia",
+  "interests": [
+      "Web Development",
+      "UX design",
+      "Cyber Security"
+  ]
+}`;
+
 /**
  *  Child Menu for the Header
  * @type {{label: string; href: string}[]}
@@ -177,7 +189,7 @@ export const techStacks: TechStack[] = [
 export const projects = [
   {
     title: "Hacktiv Go Final Assignment",
-    description: "Portfolio V1",
+    description: "Golang REST API",
     thumbnail:
       "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/BinaryBG.jpg?updatedAt=1715003319550",
     href: {
