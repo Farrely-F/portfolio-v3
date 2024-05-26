@@ -6,21 +6,20 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "FARREL.DEV";
-export const size = {
-  width: 1200,
-  height: 630,
-};
+export async function GET() {
+  const size = {
+    width: 1200,
+    height: 630,
+  };
 
-export const contentType = "image/png";
+  const contentType = "image/png";
 
-export default async function Image() {
   const geistSans = await fetch(
-    new URL("../fonts/GeistSans.ttf", import.meta.url),
+    new URL("../../../fonts/GeistSans.ttf", import.meta.url),
   ).then((res) => res.arrayBuffer());
 
   const geistMono = await fetch(
-    new URL("../fonts/GeistMono.ttf", import.meta.url),
+    new URL("../../../fonts/GeistMono.ttf", import.meta.url),
   ).then((res) => res.arrayBuffer());
 
   try {
@@ -95,5 +94,8 @@ export default async function Image() {
     );
   } catch (error) {
     console.error("error", error);
+    return new Response("Failed to generate image", {
+      status: 500,
+    });
   }
 }

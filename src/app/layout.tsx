@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     apple: "/favicon.png",
     other: { rel: "apple-touch-icon", url: "/favicon.png" },
   },
-  authors: [{ name: "FAR.DEV", url: "https://far.dev" }],
+  authors: [{ name: "FAR.DEV", url: "https://site.farrel.cloud" }],
   openGraph: {
     images: [
       {
-        url: "https://site.farrel.cloud/opengraph-image",
+        url: "https://site.farrel.cloud/api/og",
         width: 1200,
         height: 630,
         alt: "FARREL.DEV",
