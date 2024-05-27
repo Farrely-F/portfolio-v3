@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-interface SectionProps extends React.ComponentPropsWithoutRef<"section"> {
+interface SectionProps extends React.ComponentPropsWithRef<"section"> {
   children: React.ReactNode;
   className?: string;
 }

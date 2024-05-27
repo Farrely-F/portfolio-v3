@@ -1,7 +1,7 @@
 "use client";
 
+import { LazyMotion, domAnimation, m } from "framer-motion";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { profileJson } from "@/constants/menu";
 
 export default function Profile() {
@@ -23,17 +23,19 @@ export default function Profile() {
   return (
     <>
       <span className="font-bold">{animatedText}</span>
-      <motion.span
-        animate={{
-          opacity: [0, 1, 0, 1, 0],
-          transition: {
-            repeat: 20,
-            duration: 1,
-          },
-        }}
-      >
-        |
-      </motion.span>
+      <LazyMotion features={domAnimation}>
+        <m.span
+          animate={{
+            opacity: [0, 1, 0, 1, 0],
+            transition: {
+              repeat: 20,
+              duration: 1,
+            },
+          }}
+        >
+          |
+        </m.span>
+      </LazyMotion>
     </>
   );
 }

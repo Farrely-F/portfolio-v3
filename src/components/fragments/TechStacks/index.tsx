@@ -34,14 +34,14 @@ export default function TechStacks() {
                   {stack.items.map((item) => (
                     <div
                       key={item.name}
-                      className="group grid size-24 place-content-center space-y-2 rounded-xl border border-white/5 p-4 transition-all duration-500 ease-in-out hover:border-0 hover:bg-white/5"
+                      className={`group grid size-24 place-content-center space-y-2 rounded-xl border border-white/5 p-4 shadow transition-all duration-500 ease-in-out hover:scale-105 hover:border-0 hover:bg-white/5 hover:shadow-[0_0_12px_1px_rgba(255,255,255,0.15)]`}
                     >
                       <Image
                         src={item.icon}
                         width={40}
                         height={40}
-                        alt="image of sublimetext"
-                        className="mx-auto size-10 object-contain"
+                        alt={item.name}
+                        className="mx-auto size-10 object-contain group-hover:scale-105"
                       />
                       <p className="text-center group-hover:text-white">
                         {item.name.toUpperCase()}
