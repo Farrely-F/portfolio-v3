@@ -196,29 +196,29 @@ export const projects = [
       github: "https://github.com/Farrely-F/hacktivgo-final-assignment",
       preview: null,
     },
-    author: ["sltr9"],
+    author: ["Farrely-F"],
   },
   {
-    title: "Runnerz",
-    description: "React Redux Fake Store",
+    title: "OBRA Company Profile",
+    description: "Branch Company of SLTR",
     thumbnail:
-      "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/Runnerz.png?updatedAt=1715003505780",
+      "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/obra-website.png?updatedAt=1727609275957",
     href: {
-      github: "https://github.com/sltr9/portfolio-v2",
-      preview: "https://runnerz.vercel.app/",
+      github: null,
+      preview: "https://obra.co.id",
     },
-    author: ["sltr9"],
+    author: ["Farrely-F"],
   },
   {
-    title: "Farrel.Dev",
-    description: "Portfolio V3",
+    title: "Horus Company Profile",
+    description: "Payment Gateway of SLTR.ID",
     thumbnail:
-      "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/PortfolioV3.png?updatedAt=1715003332398",
+      "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/horus-company-profile?updatedAt=1727609120264",
     href: {
-      github: "https://github.com/sltr9/portfolio-v3",
-      preview: "https://github.com/sltr9/portfolio-v3",
+      github: null,
+      preview: "https://horus.id",
     },
-    author: ["sltr9"],
+    author: ["Farrely-F"],
   },
   {
     title: "Gamefinity Website Revamp",
@@ -229,7 +229,7 @@ export const projects = [
       github: null,
       preview: "https://gamefinity.id",
     },
-    author: ["sltr9"],
+    author: ["SLTR"],
   },
   {
     title: "Paoplay Website Revamp",
@@ -240,7 +240,7 @@ export const projects = [
       github: null,
       preview: "https://paoplay.com",
     },
-    author: ["sltr9"],
+    author: ["SLTR"],
   },
   {
     title: "Instn Revamp",
@@ -251,7 +251,7 @@ export const projects = [
       github: null,
       preview: "https://gamefinity.instn.id",
     },
-    author: ["sltr9"],
+    author: ["SLTR"],
   },
   {
     title: "Tokopedia Play Clone",
@@ -260,9 +260,9 @@ export const projects = [
       "https://ik.imagekit.io/xdxrivbja/Portfolio%20Assets/TokpedPlayClone.png?updatedAt=1715003325304",
     href: {
       github: null,
-      preview: "https://play.tokopedia.com",
+      preview: "https://tokopedia-play-clone.netlify.app",
     },
-    author: ["sltr9"],
+    author: ["Farrely-F"],
   },
   {
     title: "GCA Comprof Website",
@@ -273,6 +273,6 @@ export const projects = [
       github: null,
       preview: "https://griyaciptaabadi.netlify.app/",
     },
-    author: ["sltr9"],
+    author: ["Farrely-F"],
   },
 ];
