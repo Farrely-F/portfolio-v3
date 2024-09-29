@@ -33,6 +33,8 @@ export default function Header() {
     };
 
     window.addEventListener("scroll", handleSrolledDown);
+
+    return () => window.removeEventListener("scroll", handleSrolledDown);
   }, []);
 
   return (
@@ -92,7 +94,10 @@ export default function Header() {
                 <a
                   className="block w-full hover:text-white"
                   href={menu.href}
-                  onClick={removeHash}
+                  onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+                    removeHash(event);
+                    handleMenuOpen();
+                  }}
                 >
                   {menu.label}
                 </a>
